@@ -1,0 +1,48 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# StatisticHelper
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+This package provides simple statistical helper functions to calculate measures such as the mean, median, variance, and standard deviation. It is designed as an exercise to learn how to build and document your own R package.
+
+## Installation
+
+You can install the development version of StatisticHelper from [GitHub](https://github.com/) with:
+
+``` {r}
+#download Pak
+library(pak)
+# install.packages("pak")
+pak::pak("AlinaMaldonado/StatisticHelper")
+```
+
+
+## Usage
+
+Here is a basic example of how to use the functions in the **StatisticHelper** package:
+
+```{r example}
+library(StatisticHelper)
+
+# Calculate mean and standard deviation
+mean_sd(c(1, 2, 3, 4, 5))
+
+# Calculate median and variance
+median_var(c(1, 2, 3, 4, 5))
+
+```
